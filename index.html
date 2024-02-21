@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Cary Bakery</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <script src="js/script.js"></script>
+</head>
+
+<body onload="loadNews()">
+
+  <!-- Header -->
+  <header>
+
+    <div class="subHeader">
+
+      <!-- Logo -->
+      <div class="logoCompany">
+        <h1>Cary
+          <span class="logoCompanyHalf">Bakery</span>
+        </h1>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav>
+        <a href="views/products.html">Gallery</a>
+        <a href="views/presupuesto.html">Price</a>
+        <a href="views/contacto.html">Contacts</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- Block of Our Bakery -->
+
+  <article>
+    <div class="subheading">
+      <h2>OUR BAKERY</h2>
+    </div>
+    <div class="informationSection">
+      <!-- First block of picture -->
+      <div>
+        <img class="verticalImage" src="images/bakery1.jpg" alt="Bakery 1">
+      </div>
+      <!-- Second block of pictures -->
+      <div class="horizontalImages">
+        <img class="horizontalImage1" src="images/bakery2.jpg" alt="Bakery 2">
+        <img class="horizontalImage2" src="images/bakery3.jpg" alt="Bakery 3">
+      </div>
+
+      <!-- Block with text -->
+
+      <div class="textSection">
+        <p>Cary dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Eleifend donec pretium vulputate sapien nec 1986. Feugiat in ante metus dictum at tempor
+          commodo
+          ullamcorper. <br>
+          Odio facilisis mauris sit amet massa. Diam ut venenatis tellus in metus vulputate eu
+          scelerisque.
+          Pellentesque habitant morbi 5 of tristique senectus et netus. Aliquet risus feugiat in ante metus dictum.
+          Lorem
+          donec massa sapien faucibus et molestie.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Block of Menu -->
+
+  <article>
+    <div class="subheading">
+      <h2>MENU</h2>
+    </div>
+    <div class="blockOfMenu">
+      <div class="topSection">
+        <div class="sectionOfFood">
+
+          <img class="foodOfMenu" src="images/croissant.jpg" alt="Croissant">
+
+          <h3 class="headingSection">Croissants</h3>
+          <p class="textOfFood">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+          </p>
+
+        </div>
+        <div class="sectionOfFood">
+
+          <img class="foodOfMenu" src="images/cake.jpg" alt="Cake">
+
+          <h3 class="headingSection">Cakes</h3>
+          <p class="textOfFood">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.</p>
+
+        </div>
+        <div class="sectionOfFood">
+
+          <img class="foodOfMenu" src="images/muffin.jpg" alt="Muffin">
+
+          <h3 class="headingSection">Muffins</h3>
+          <p class="textOfFood">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+
+        </div>
+      </div>
+
+      <!-- Button of Price  -->
+      <div class="bottomSection">
+        <a href="views/presupuesto.html">Price</a>
+      </div>
+
+    </div>
+  </article>
+
+
+
+  <!-- Block About Me -->
+
+  <article>
+
+    <div class="subheading">
+      <h2>ABOUT ME</h2>
+    </div>
+    <div class="informationSection">
+      <!-- Block with text -->
+
+      <div class="textSection">
+        <p>My name is Cary and this is my bakery. Quam vulputate dignissim suspendisse in est
+          ante in. Massa tempor nec feugiat nisl pretium. Vel facilisis volutpat est velit egestas dui id. Nulla
+          pellentesque dignissim enim sit amet. Mauris vitae ultricies leo integer malesuada 1986. Sed risus pretium
+          quam vulputate. Vitae congue eu consequat ac felis. Posuere ac ut consequat semper viverra nam libero justo
+          laoreet. Hac habitasse platea dictumst vestibulum rhoncus today.</p>
+      </div>
+
+
+      <!-- Block of picture -->
+      <div>
+        <img class="imageAboutMe" src="images/about_me.jpg" alt="About Me">
+      </div>
+
+
+    </div>
+
+
+  </article>
+
+
+  <!-- Section News -->
+
+  <article>
+    <div class="subheading">
+      <h2>OUR NEWS</h2>
+    </div>
+    <div id="cajaNews">
+    </div>
+  </article>
+
+
+  <!-- Section of Footer -->
+
+  <footer>
+    <div class="locationAndIcons">
+      <div class="sectionFooter1">
+        <h4 class="headingFooter">Location</h4>
+        <p class="adressFooter">Málaga, street Alferez Delgado 5</p>
+      </div>
+      <div class="sectionFooter2">
+        <a href="#"><img src="images/favicon_instagram.png" alt="Icon Instagram"></a>
+        <a href="#"><img src="images/favicon_facebook.png" alt="Icon Facebook"></a>
+      </div>
+    </div>
+    <div class="sectionFooter3">
+      © 2023 Cary Bakery
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

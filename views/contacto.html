@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Contacts</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+
+<body onload="initializeMap() ">
+
+
+  <!-- Header -->
+  <header>
+
+    <div class="subHeader">
+
+      <!-- Logo -->
+
+      <div class="logoCompany">
+        <a href="../index.html" style="text-decoration: none; color: white;">
+          <h1>Cary
+            <span class="logoCompanyHalf">Bakery</span>
+          </h1>
+        </a>
+      </div>
+
+
+      <!-- Navigation Bar -->
+      <nav>
+        <a href="../views/products.html">Gallery</a>
+        <a href="../views/presupuesto.html">Price</a>
+        <a href="#" style="text-decoration:underline">Contacts</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <section>
+    <div class="subheading">
+      <h2>CONTACTS US</h2>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="addressOfBakery">
+      <h3 class="headingSectionArea">ADDRESS</h3>
+      <p class="textArea">
+        Málaga, Spain
+        street Alferez Delgado 5
+        29007
+        Tel: 34-528-26-48
+      </p>
+    </div>
+    <div class="addressOfBakery">
+      <h3 class="headingSectionArea">OPENING HOURS</h3>
+      <p class="textArea">
+        Monday - Friday: 9:00 - 18:00
+        Saturday: 9:00 - 15:00
+        Sunday: day off
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Section of Footer -->
+
+  <footer>
+    <div class="locationAndIcons">
+      <div class="sectionFooter1">
+        <h4 class="headingFooter">Location</h4>
+        <p class="adressFooter">Málaga, street Alferez Delgado 5</p>
+      </div>
+      <div class="sectionFooter2">
+        <a href="#"><img src="../images/favicon_instagram.png" alt="Icon Instagram"></a>
+        <a href="#"><img src="../images/favicon_facebook.png" alt="Icon Facebook"></a>
+      </div>
+    </div>
+    <div class="sectionFooter3">
+      © 2023 Cary Bakery
+    </div>
+  </footer>

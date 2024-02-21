@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Price</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header>
+
+    <div class="subHeader">
+
+      <!-- Logo -->
+
+      <div class="logoCompany">
+        <a href="../index.html" style="text-decoration: none; color: white;">
+          <h1>Cary
+            <span class="logoCompanyHalf">Bakery</span>
+          </h1>
+        </a>
+      </div>
+
+
+      <!-- Navigation Bar -->
+      <nav>
+        <a href="../views/products.html">Gallery</a>
+        <a href="#" style="text-decoration:underline">Price</a>
+        <a href="../views/contacto.html">Contacts</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <section>
+    <div class="subheading">
+      <h2>REQUEST A PRICE</h2>
+    </div>
+
+    <form method="post" name="datos" onsubmit="return sendForm()">
+      <div class="registrationDatas">
+
+
+        <!-- Name -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Name:</h3>
+          </div>
+          <div>
+            <input type="text" name="name" class="camp" size="40" id="input1" value="" placeholder="Your name">
+          </div>
+        </div>
+
+        <!-- SurName -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Surname:</h3>
+          </div>
+          <div>
+            <input type="text" name="surname" class="camp" size="40" id="input2" value="" placeholder="Your surname">
+          </div>
+        </div>
+
+        <!--  Email -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Email:</h3>
+          </div>
+          <div>
+            <input type="text" name="email" class="camp" size="40" id="input3" value=""
+              placeholder="Your direction@email.com">
+          </div>
+        </div>
+
+        <!-- Telephone -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Telephone:</h3>
+          </div>
+          <div>
+            <input type="text" name="telefono" class="camp" size="40" id="input4" value="" placeholder="Your telephone">
+          </div>
+        </div>
+
+        <!-- Choose product -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Choose product:</h3>
+          </div>
+          <div>
+            <select name="select" id="selectOption" class="camp" onchange="calculate()">
+              <option value="0">Select desserts</option>
+              <option value="1">Croissants</option>
+              <option value="2">Cakes</option>
+              <option value="3">Muffins</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Amount -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Amount of products:</h3>
+          </div>
+          <div>
+            <input type="number" id="amount" name="amount" class="camp" onchange="calculate()">
+          </div>
+        </div>
+
+
+        <!-- Extra -->
+        <div class="registrationInputsSectionsExtras">
+          <div>
+            <h3 class="headingSectionArea">Extras:</h3>
+          </div>
+
+
+          <div>
+            <div class="registrationInputsExtra">
+              <div>
+                <p class="optionsExtra">Gift wrap</p>
+              </div>
+              <div>
+                <input type="checkbox" id="check1" name="giftwrap" onchange="calculate()">
+              </div>
+            </div>
+
+            <div class="registrationInputsExtra">
+              <div>
+                <p class="optionsExtra">Double chocolate topping</p>
+              </div>
+              <div>
+                <input type="checkbox" id="check2" name="topping" onchange="calculate()">
+              </div>
+            </div>
+
+            <div class="registrationInputsExtra">
+              <div>
+                <p class="optionsExtra">Add ice cream</p>
+              </div>
+              <div>
+                <input type="checkbox" id="check3" name="icecream" onchange="calculate()">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price total -->
+        <div class="registrationInputs">
+          <div>
+            <h3 class="headingSectionArea">Price total:</h3>
+          </div>
+          <div>
+            <input type="text" id="pricetotal" name="pricetotal" size="5" class="camp" placeholder="0.00$">
+          </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="privacyPolicy">
+          <div>
+            <p>I have read and agree to the privacy policy:</p>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="check4" onchange="privacy()">
+          </div>
+        </div>
+
+        <!-- Bottons -->
+
+        <div class="buttonsGroup">
+          <div class="buttonLeft">
+            <input type="submit" name="Send button" id="submit" value="SEND" class="botonsStyles" disabled>
+          </div>
+          <div class="buttonRight">
+            <input type="reset" name="Clear button" value="CLEAR" class="botonsStyles">
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </section>
+
+
+  <!-- Section of Footer -->
+
+  <footer>
+    <div class="locationAndIcons">
+      <div class="sectionFooter1">
+        <h4 class="headingFooter">Location</h4>
+        <p class="adressFooter">Málaga, street Alferez Delgado 5</p>
+      </div>
+      <div class="sectionFooter2">
+        <a href="#"><img src="../images/favicon_instagram.png" alt="Icon Instagram"></a>
+        <a href="#"><img src="../images/favicon_facebook.png" alt="Icon Facebook"></a>
+      </div>
+    </div>
+    <div class="sectionFooter3">
+      © 2023 Cary Bakery
+    </div>
+  </footer>
